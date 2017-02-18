@@ -11,13 +11,11 @@ module.exports = {
 
         function successFn(res) {
             if(res.data.cod && res.data.message) {
-                throw new Error(res.data.message);
+                throw new Error("City cannot be found");
             } else {
                 return res.data.main.temp;
             }
-
         }
-
         function errFn(err) {
             throw new Error("City not found");
         }

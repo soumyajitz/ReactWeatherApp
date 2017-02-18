@@ -25628,14 +25628,14 @@
 	        openWeatherMap.getTemp(location).then(function (temp) {
 	            self.setState({
 	                location: location,
-	                temp: temp
+	                temp: temp,
+	                isLoading: false
 	            });
 	        }, function (e) {
 	            self.setState({
 	                isLoading: false,
 	                errMsg: e.message
 	            });
-	            alert(errMsg);
 	        });
 	    },
 	    render: function render() {
@@ -25768,7 +25768,7 @@
 	    },
 	    propTypes: {
 	        title: React.PropTypes.string,
-	        message: React.PropTypes.string.isRequired
+	        message: React.PropTypes.string
 	    },
 	    componentDidMount: function componentDidMount() {
 	        var modal = new Foundation.Reveal($('#error-modal'));
@@ -43960,12 +43960,11 @@
 	
 	        function successFn(res) {
 	            if (res.data.cod && res.data.message) {
-	                throw new Error(res.data.message);
+	                throw new Error("City cannot be found");
 	            } else {
 	                return res.data.main.temp;
 	            }
 	        }
-	
 	        function errFn(err) {
 	            throw new Error("City not found");
 	        }
