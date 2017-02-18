@@ -18,8 +18,8 @@ module.exports = {
 
         }
 
-        function errFn(res) {
-            throw new Error(res.data.message);
+        function errFn(err) {
+            throw new Error("City not found");
         }
     }
 }
