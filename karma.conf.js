@@ -1,4 +1,4 @@
-var webpakcConfig = require('webpack');
+var webpackConfig = require('./webpack.config.js');
 
 module.exports = function(config) {
     config.set({
@@ -15,7 +15,7 @@ module.exports = function(config) {
                 timeout: '5000'
             }
         },
-        webpack: webpakcConfig,
+        webpack: webpackConfig,
         webpackServer: {
             noInfo: true
         }
