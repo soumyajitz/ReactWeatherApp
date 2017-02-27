@@ -1,6 +1,6 @@
 # React Weather Application
 
-- This app fetches data from the ###OpenWeatherMapAPI
+- This app fetches data from the OpenWeatherMap API
 - Uses different React components
 - Uses axios library to get weather API data
 - Uses React router
