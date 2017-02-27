@@ -28,6 +28,8 @@ module.exports = {
             About: 'app/components/About.jsx',
             Examples: 'app/components/Examples.jsx',
             Timer: 'app/components/Timer.jsx',
+            Clock: 'app/components/Clock.jsx',
+            Countdown: 'app/components/Countdown.jsx',
             WeatherForm: 'app/components/WeatherForm.jsx',
             WeatherMessage: 'app/components/WeatherMessage.jsx',
             openWeatherMap: 'app/api/openWeatherMap.jsx',

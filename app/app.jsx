@@ -7,6 +7,7 @@
  var About = require('About');
  var Examples = require('Examples');
  var Timer = require('Timer');
+ var Countdown = require('Countdown');
 
 
 //load Foundation CSS Library
@@ -22,6 +23,7 @@ require('!!style!css!appStyles');
             <Route path="about" component={About}/>
             <Route path="examples" component={Examples}/>
             <Route path="timer" component={Timer}/>
+            <Route path="countdown" component={Countdown}/>
             <IndexRoute component={Weather}/>
         </Route>
      </Router>,
