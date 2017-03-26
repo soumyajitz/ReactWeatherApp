@@ -27568,6 +27568,15 @@
 	            }
 	        }
 	    },
+	    componentWillMount: function componentWillMount() {
+	        console.log('Component will mount');
+	    },
+	    componentDidMount: function componentDidMount() {
+	        console.log('Component did mount');
+	    },
+	    componentWillUnmount: function componentWillUnmount() {
+	        console.log('Component did unmount');
+	    },
 	    startTimer: function startTimer() {
 	        var _this = this;
 	
